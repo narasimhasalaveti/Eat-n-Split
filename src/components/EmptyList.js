@@ -1,8 +1,8 @@
 export default function EmptyList() {
 	return (
 		<div className="empty-list">
-			Welcome to Eat-n-Split! Start by adding your friends to split bills
-			easily.
+			👋 Welcome to Eat-n-Split! Add friends below to start splitting bills and
+			tracking expenses together.
 		</div>
 	);
 }

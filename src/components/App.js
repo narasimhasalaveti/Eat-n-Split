@@ -43,6 +43,10 @@ export default function App() {
 
 	return (
 		<div className="app">
+			<header className="app-header">
+				<h1 className="app-title">🍽️ Eat-n-Split</h1>
+				<p className="app-subtitle">Split bills with friends easily!</p>
+			</header>
 			<div className="sidebar">
 				{friends.length === 0 ? (
 					<EmptyList />
