@@ -18,19 +18,22 @@ html {
 }
 
 body {
-	height: 100vh;
+	min-height: 100vh;
 	color: #495057;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
+	padding: 2rem 0;
 }
 
 .app {
-	min-height: 66vh;
+	min-height: fit-content;
 	display: grid;
 	grid-template-columns: 34rem 44rem;
 	column-gap: 4rem;
 	align-items: start;
+	width: 100%;
+	max-width: 82rem;
 }
 
 .app-header {
@@ -76,6 +79,28 @@ body {
 	gap: 0.4rem;
 	font-size: 1.4rem;
 	margin-bottom: 2rem;
+	max-height: 70vh;
+	overflow-y: auto;
+	padding-right: 0.5rem;
+}
+
+/* Custom scrollbar styling */
+.sidebar ul::-webkit-scrollbar {
+	width: 6px;
+}
+
+.sidebar ul::-webkit-scrollbar-track {
+	background: var(--color-lightest);
+	border-radius: 3px;
+}
+
+.sidebar ul::-webkit-scrollbar-thumb {
+	background: var(--color-medium);
+	border-radius: 3px;
+}
+
+.sidebar ul::-webkit-scrollbar-thumb:hover {
+	background: var(--color-dark);
 }
 
 .sidebar li {
@@ -204,4 +229,25 @@ form h2 {
 	padding: 2rem;
 	border-radius: 7px;
 	margin-bottom: 2rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+	.app {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding: 0 1rem;
+	}
+
+	.app-header {
+		margin-bottom: 2rem;
+	}
+
+	.app-title {
+		font-size: 3rem;
+	}
+
+	.sidebar ul {
+		max-height: 30vh;
+	}
 }
