@@ -4,6 +4,7 @@ import EmptyList from "./EmptyList";
 import FriendList from "./FriendList";
 import FormAddFriend from "./FormAddFriend";
 import FormSplitBill from "./FormSplitBill";
+import Footer from "./Footer";
 
 export default function App() {
 	const [friends, setFriends] = useState([]);
@@ -72,6 +73,8 @@ export default function App() {
 					onSplitBill={HandleSplitBill}
 				/>
 			)}
+
+			<Footer />
 		</div>
 	);
 }
