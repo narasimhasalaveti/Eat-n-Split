@@ -24,7 +24,14 @@ body {
 	align-items: flex-start;
 	justify-content: center;
 	padding: 2rem 0 10rem;
-	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+	background: linear-gradient(
+		135deg,
+		#fff4e6 0%,
+		#ffe8cc 25%,
+		#ffd8a8 50%,
+		#ffcc80 75%,
+		#ffb74d 100%
+	);
 	position: relative;
 }
 
@@ -81,7 +88,7 @@ body {
 	gap: 0.4rem;
 	font-size: 1.4rem;
 	margin-bottom: 2rem;
-	max-height: 70vh;
+	max-height: 55vh;
 	overflow-y: auto;
 	padding-right: 0.5rem;
 }
