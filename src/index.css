@@ -23,7 +23,7 @@ body {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
-	padding: 2rem 0 10rem;
+	padding: 2rem 0 8rem;
 	background: linear-gradient(
 		135deg,
 		#fafafa 0%,
@@ -43,6 +43,7 @@ body {
 	align-items: start;
 	width: 100%;
 	max-width: 82rem;
+	margin-bottom: 2rem;
 }
 
 .app-header {
@@ -245,9 +246,9 @@ form h2 {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	right: 0;
+	width: 100vw;
 	text-align: center;
-	padding: 1rem 2rem;
+	padding: 1.5rem 2rem;
 	background: var(--color-lightest);
 	border-top: 2px solid var(--color-light);
 	box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
